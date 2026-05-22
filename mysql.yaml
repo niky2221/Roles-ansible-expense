@@ -1,10 +1,6 @@
 - name: configure mysql server
   hosts: mysql
   become: yes
-  tasks:
-  - name: install nginx
-    ansible.builtin.package:
-      name: nginx
-      state: present
-
+  roles:
+    mysql
 
