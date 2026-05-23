@@ -10,6 +10,8 @@
     enabled: yes
 
 - name: include from common role
+  tags:
+  - deploy
   include_role:
     name: common
     tasks_from: main
