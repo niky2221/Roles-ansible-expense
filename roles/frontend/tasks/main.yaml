@@ -9,7 +9,7 @@
     state: started
     enabled: yes
 
-- name: include from common roles
+- name: include from common role
   include_role:
     name: common
     tasks_from: main
